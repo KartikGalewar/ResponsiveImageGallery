@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+		<title>Responsive Image Gallery</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Responsive Image Gallery with jQuery" />
+		<meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+		<noscript>
+        <style>
+.es-carousel ul {
+	display: block;
+}
+</style>
+        </noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+		</head>
+		<body>
+        <div class="container">
+          <div class="content">
+            <div id="rg-gallery" class="rg-gallery">
+              <div class="rg-thumbs"> 
+                <!-- Elastislide Carousel Thumbnail Viewer -->
+                <div class="es-carousel-wrapper">
+                  <div class="es-nav"> </div>
+                  <div class="es-carousel">
+                    <ul>
+                      <li><a href="#"><img src="images/thumbs/thumb-image1.jpg" data-large="images/image1.jpg" alt="image01" /></a></li>
+                      <li><a href="#"><img src="images/thumbs/thumb-image2.jpg" data-large="images/image2.jpg" alt="image02" /></a></li>
+                      <li><a href="#"><img src="images/thumbs/thumb-image3.jpg" data-large="images/image3.jpg" alt="image03" /></a></li>
+                      <li><a href="#"><img src="images/thumbs/thumb-image4.jpg" data-large="images/image4.jpg" alt="image04" /></a></li>
+                      <li><a href="#"><img src="images/thumbs/thumb-image5.jpg" data-large="images/image5.jpg" alt="image05" /></a></li>
+                      <li><a href="#"><img src="images/thumbs/thumb-image6.jpg" data-large="images/image6.jpg" alt="image06" /></a></li>
+                      <li><a href="#"><img src="images/thumbs/thumb-image7.jpg" data-large="images/image7.jpg" alt="image07" /></a></li>
+                      <li><a href="#"><img src="images/thumbs/thumb-image8.jpg" data-large="images/image8.jpg" alt="image08" /></a></li>
+                      <li><a href="#"><img src="images/thumbs/thumb-image9.jpg" data-large="images/image9.jpg" alt="image09" /></a></li>
+                      <li><a href="#"><img src="images/thumbs/thumb-image10.jpg" data-large="images/image10.jpg" alt="image10"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Elastislide Carousel Thumbnail Viewer --> 
+              </div>
+              <!-- rg-thumbs --> 
+            </div>
+            <!-- rg-gallery --> 
+            
+          </div>
+          <!-- content --> 
+        </div>
+        <!-- container --> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>--> 
+        <script type="text/javascript" src="js/jquery.tmpl.min.js"></script> 
+        <script type="text/javascript" src="js/jquery.elastislide.js"></script> 
+        <script type="text/javascript" src="js/gallery.js"></script>
+</body>
+</html>
